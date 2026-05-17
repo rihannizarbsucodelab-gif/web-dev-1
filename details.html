@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destination Details</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="CSS/details.css"/>
+</head>
+
+<body>
+
+<!--Hero-->
+<section class="details-hero">
+  <button class="back-btn" onclick="goBack()">Back</button>
+  <img id="placeImg" src="" alt="">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 id="placeName"></h1>
+    <p id="placeRating"></p>
+  </div>
+</section>
+
+<!--CONTENT-->
+<section class="details-container">
+  <div class="details-left">
+    <h2>About this destination</h2>
+    <p id="placeDesc"></p>
+    <h3>Highlights</h3>
+    <ul class="highlights">
+      <li>Beautiful scenic views</li>
+      <li>Luxury accommodations</li>
+      <li>Top-rated experiences</li>
+      <li>Perfect for couples & families</li>
+    </ul>
+
+    <!--WHAT'S INCLUDED-->
+    <h3>What's Included</h3>
+    <div class="includes">
+      <div> Hotel included</div>
+      <div> Breakfast included</div>
+      <div> Airport pickup</div>
+      <div> Guided tours</div>
+    </div>
+  </div>
+
+  <div class="details-right">
+    <div class="booking-card">
+      <p class="price" id="placePrice"></p>
+
+      <!--BOOKING FIELDS-->
+      <div class="booking-fields">
+        <label>Check-in</label>
+        <input type="date" id="checkin">
+        <label>Check-out</label>
+        <input type="date" id="checkout">
+
+        <label>Guests</label>
+        <select id="guests">
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4+ Guests</option>
+        </select>
+      </div>
+
+      <!--TOTAL PRICE-->
+      <p id="totalPrice" class="total-price"></p>
+
+      <button class="btn" onclick="goToPayment()">Book Now</button>
+    </div>
+  </div>
+
+</section>
+
+
+<!--LOADING TRANSITION-->
+<div id="loadingScreen" class="loading-screen">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <h2>Preparing your trip...</h2>
+    <p>Securing best price & details</p>
+  </div>
+</div>
+
+<script src="JS/details.js"></script>
+</body>
+</html>

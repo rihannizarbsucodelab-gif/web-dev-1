@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<!--Header-->
+<nav class="modern-nav glass-nav">
+  <div class="nav-left">
+    <h2 class="logo">Holidae</h2>
+  </div>
+
+  <div class="nav-links center-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">Why US</a>
+    <a href="packages.html">Packages</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="modern-hero">
+
+<!--Slider Background-->
+<div class="hero-slider">
+  <div class="slide active" style="background-image:url('./assets/home.png')"></div>
+  <div class="slide" style="background-image:url('./assets/adventure.png')"></div>
+  <div class="slide" style="background-image:url('./assets/home  beach.png')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1493558103817-58b2924bce98')"></div>
+</div>
+
+<div class="hero-left">
+<h1 id="slideTitle">Let’s Travel the World</h1>
+<p id="slideDesc">Discover amazing places</p>
+
+<button id="readMoreBtn">Read More</button>
+<button id="exploreBtn" onclick="goToPackages()">
+  Explore Packages
+</button>
+<!--SLIDER DOTS-->
+<div class="slider-dots">
+  <span onclick="goSlide(0)" class="dot active"></span>
+  <span onclick="goSlide(1)" class="dot"></span>
+  <span onclick="goSlide(2)" class="dot"></span>
+
+  <!--NEW DOTS -->
+  <span onclick="goSlide(3)" class="dot"></span>
+  <span onclick="goSlide(4)" class="dot"></span>
+  <span onclick="goSlide(5)" class="dot"></span>
+</div>
+
+</div>
+
+<!--SOCIAL ICONS-->
+<div class="social-icons">
+  <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
+  <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"></a>
+  <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></a>
+</div>
+
+<div id="toast"></div>
+
+<script src="JS/script.js"></script>
+<script>checkLoginStatus();</script>
+
+</section>
+
+<!-- FOOTER START -->
+<footer class="footer">
+  <div class="footer-container">
+    <h2>Holidae</h2>
+    <p>Discover amazing places and book your next adventure easily.</p>
+
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">Why Us</a>
+      <a href="packages.html">Packages</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 Holidae. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

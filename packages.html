@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holidae — Find Your Next Adventure</title>
+
+  <meta name="description" content="Discover handpicked destinations and book your dream holiday in minutes." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/packages.css" />
+</head>
+
+<body>
+
+  <!--Nav-->
+  <header class="header">
+    <nav class="glass-nav">
+      <a href="#" class="logo">Holidae</a>
+      <div class="nav-links center-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Why US</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!--HERO-->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-content reveal">
+        <h1>Find Your Next Adventure</h1>
+        <p>
+          Discover handpicked destinations and book your dream holiday in minutes.
+        </p>
+        <form class="search-form" id="searchForm">
+          <div class="field field-lg reveal">
+            <label>DESTINATION</label>
+            <input type="text" id="destination" placeholder="Where to?" />
+          </div>
+          <div class="field reveal">
+            <label>CHECK IN</label>
+            <input type="date" id="checkin" />
+          </div>
+
+          <div class="field reveal">
+            <label>CHECK OUT</label>
+            <input type="date" id="checkout" />
+          </div>
+
+          <div class="field reveal">
+            <label>GUESTS</label>
+            <select id="guests">
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4+ Guests</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Search</button>
+        </form>
+        <p id="searchResult" class="search-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!--DESTINATIONS-->
+  <section id="destinations" class="section container reveal">
+    <div class="section-head">
+      <h2>Popular Destinations</h2>
+      <p>Trending getaways travelers love right now.</p>
+    </div>
+
+    <div class="grid grid-3" id="destinationsGrid"></div>
+  </section>
+
+  <!--NEW TRENDING DESTINATIONS -->
+  <section class="destinations reveal">
+    <div class="dest-header">
+      <div>
+        <p class="eyebrow">Trending</p>
+        <h2>Destinations on everyone's list</h2>
+      </div>
+      <p class="subtitle">
+        Explore the places our travelers can't stop talking about right now.
+      </p>
+    </div>
+    <div class="dest-grid" id="dest-grid"></div>
+  </section>
+
+
+  </section>
+
+<!-- FOOTER-->
+<footer class="footer">
+  <div class="footer-container">
+    <h2>Holidae</h2>
+    <p>Discover amazing places and book your next adventure easily.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">Why Us</a>
+      <a href="packages.html">Packages</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 Holidae. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+</body>
+
+  <script src="JS/packages.js"></script>
+
+</body>
+</html>

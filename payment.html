@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Payment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS/payment.css">
+</head>
+
+<body>
+<section class="payment-page">
+  <div class="payment-left">
+      <div class="top-bar">
+        <h2>Holidae</h2>
+      <div class="secure-badge">
+      </div>
+    </div>
+    <div class="payment-content">
+      <p class="small-text">PREMIUM BOOKING</p>
+      <h1>
+        Complete Your <br>
+        Luxury Trip Payment
+      </h1>
+      <p class="desc">
+        Your booking is almost confirmed. 
+        Complete payment securely to unlock your travel experience.
+      </p>
+
+      <!--Card-->
+      <div class="credit-card">
+        <div class="card-top">
+          <span>VISA</span>
+          <span>Premium</span>
+        </div>
+        <div class="card-number">
+          4587 **** **** 4589
+        </div>
+        <div class="card-bottom">
+          <div>
+            <small>Card Holder</small>
+            <h4>Your Name</h4>
+          </div>
+          <div>
+            <small>Expires</small>
+            <h4>00/00</h4>
+          </div>
+        </div>
+      </div>
+      <form id="paymentForm">
+        <div class="input-group">
+          <label>Card Holder</label>
+          <input type="text" id="holder" placeholder="John Doe">
+        </div>
+        <div class="input-group">
+          <label>Card Number</label>
+          <input type="text" id="card" placeholder="1234 5678 9012 3456">
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label>Expiry</label>
+            <input type="text" id="expiry" placeholder="MM/YY">
+          </div>
+          <div class="input-group">
+            <label>CVV</label>
+            <input type="password" id="cvv" placeholder="123">
+          </div>
+        </div>
+
+        <!--PAYMENT METHODS-->
+        <div class="methods">
+          <div class="method active">
+             Card
+          </div>
+          <div class="method">
+             Pay
+          </div>
+          <div class="method">
+            Other
+          </div>
+        </div>
+        <button class="pay-btn" type="submit">
+          Pay Securely
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="payment-right">
+
+    <img id="placeImage"
+    src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1200">
+
+    <div class="overlay"></div>
+    <div class="trip-info">
+      <p class="trip-tag">LUXURY ESCAPE</p>
+      <h2 id="placeName">Maldives</h2>
+      <p>
+        Ocean villas, private beaches, 
+        sunset cruises and premium experiences.
+      </p>
+
+      <!-- PRICE -->
+      <div class="price-box">
+        <div>
+          <span>Total Price</span>
+          <h3 id="placePrice">$1499</h3>
+        </div>
+        <div class="nights">
+          7 Nights
+        </div>
+      </div>
+
+      <!--FEATURES-->
+      <div class="features">
+        <div class="feature">
+          ! Flight Included
+        </div>
+        <div class="feature">
+          ! 5 Star Resort
+        </div>
+        <div class="feature">
+          ! Free Breakfast
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!--SUCCESS SCREEN-->
+<div class="success-popup" id="successPopup">
+  <div class="success-screen">
+    <div class="ring">
+      <div class="check">!</div>
+    </div>
+    <h2 id="successTitle">Payment Confirmed</h2>
+    <p id="successText">
+      Your booking is successfully completed
+    </p>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+</div>
+
+<script src="JS/payment.js"></script>
+
+</body>
+</html>
